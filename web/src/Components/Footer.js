@@ -28,10 +28,10 @@ const Footer=()=>{
               <p>768018</p>
             </a>
             <a href="/">
-              <p><b>Phone</b>:7064214870</p>
+              <p><b>Phone:</b> 8984680361</p>
             </a>
             <a href="/">
-              <p><b>Email:</b>pratikashpanda@gmail.com</p>
+              <p><b>Email:</b> hiteshpalo26@gmail.com</p>
             </a>
             <div className="social-iicons mt-4 gap-3 flex justify-center items-center  mr-40">
               {/* <p><img src={X} alt=""/></p> */}
@@ -119,7 +119,7 @@ const Footer=()=>{
                   </li>
                   <li className="footer-links">
                     <BsArrowRightShort style={{ display: 'inline-block', marginRight: '5px' }}></BsArrowRightShort>{" "}
-                    <motion.a whileHover={{ y: -10 }} href="#">
+                    <motion.a whileHover={{ y: -10 }} href="https://esummit2k24.in/">
                       E-Summit
                     </motion.a>
                   </li>

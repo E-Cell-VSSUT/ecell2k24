@@ -3,6 +3,7 @@ import {
   innobuzz,
   ipl,
   Ted,
+  Chai,
   businessModel,
   GoHiking,
   NPF,
@@ -70,14 +71,36 @@ export const navLinks = [
 ];
 const events = [
   {
+    title: "Chai pe Charcha ",
+    icon: Chai,
+    iconBg: "#E6DEDD",
+    date: "September 2024",
+    points: [
+      "Episode 2",
+      "E-Cell VSSUT welcomed back Chai Pe Charcha Episode 2, themed 'Paving the Bridge Between Incubators and Students'.",
+      "This panel discussion fostered connections, inspired learning, and built a community of entrepreneurs."
+    ],
+    site: "",
+  },
+  {
     title: "E-Summit",
     icon: eSummit,
-    iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    iconBg: "#E6DEDD",
+    date: "April 2024 ",
     points: [
       "Eastern India's biggest flagship event brings together a horde of business moghuls and industry experts to butt heads for the much needed societal changes.",
     ],
-    site: "https://www.google.com/",
+    site: "https://esummit2k24.in/", 
+  },
+  {
+    title: "Chai pe Charcha ",
+    icon: Chai,
+    iconBg: "#E6DEDD",
+    date: "February 2024",
+    points: [
+      "E-Cell, VSSUT launched the inaugural episode of Chai Pe Charcha, which focused on self-employment and entrepreneurship, providing an overview of the Techno-Management Club and its initiatives.",
+    ],
+    site: "",
   },
   {
     title: "TedX",
@@ -89,39 +112,37 @@ const events = [
       "Tedx is a program of local, self organized events that brings in live speakers to combine and indulge in discussions.",
       "TEDx VSSUT is organized annually inviting speakers from distinguished fields who share their experiences and inspire all.",
     ],
-    site: "https://www.google.com/",
+    site: "",
   },
   {
     title: "Innobuzz",
     icon: innobuzz,
-    iconBg: "#383E56",
+    iconBg: "#E6DEDD",
     date: "Jan 2022 - Jan 2023",
     points: [
       "A 36-hour national level hackathon where participants get a chance to win exciting goodies and cash prizes by submitting effective solutions to a problem statement.",
     ],
-    site: "https://www.google.com/",
+    site: "",
   },
   {
     title: "Business Model",
-    // company_name: "Meta",
     icon: businessModel,
     iconBg: "#E6DEDD",
     date: "Jan 2023 - Present",
     points: [
       "Business Model competition is a platform where various startups pitch in there ideas to tackle day to day problems infront of genuine investors who guide them during and even after the event.",
     ],
-    site: "https://www.google.com/",
+    site: "",
   },
   {
     title: "Ipl Auction",
-    // company_name: "Meta",
     icon: ipl,
     iconBg: "#E6DEDD",
     date: "Jan 2023 - Present",
     points: [
       "A fun event where participants place themselves in the shoes of a bidder to build a dream team they always thought of. Team with the best bargaining and bidding skills wins",
     ],
-    site: "https://www.google.com/",
+    site: "",
   },
 ];
 
