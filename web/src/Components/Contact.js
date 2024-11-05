@@ -127,7 +127,7 @@ function Contact() {
                 </span>
                 <motion.a
                     whileHover={{y:-10}}
-                href="ecellvssut@gmail.com">ecellvssutgmail.com</motion.a>
+                href="mailto:ecellvssut@gmail.com">ecellvssut@gmail.com</motion.a>
               </div>
               <div>
                 <span>
@@ -135,7 +135,7 @@ function Contact() {
                 </span>
                 <motion.a
                     whileHover={{y:-10}}
-                href="tel:+91 7064214870">+91 7064214870</motion.a>
+                href="tel:+91 8984680361">+91 8984680361</motion.a>
               </div>
               <ul className="sci">
                 <motion.li whileHover={{y:-10}}>

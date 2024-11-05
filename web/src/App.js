@@ -30,7 +30,7 @@ function App() {
 
 
   return (
-    <div className="App bg-primary">
+    <div className="App bg-primary overflow-x-clip">
     {loading ? 
     <div className="flex justify-center items-center text-center bg-primary w-full h-screen">
          <ClimbingBoxLoader 

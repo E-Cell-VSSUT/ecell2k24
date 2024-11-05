@@ -5,6 +5,7 @@ import eSummit from './Events/essumit.png';
 import innobuzz from './Events/innobuzz.png'
 import ipl from './Events/ipl.png'
 import Ted from './Events/TEDX.png'
+import Chai from './Events/Chai.jpg'
 
 import cosmoinfinitas from './startupImages/cosmoinfinitas.jpeg.jpg'
 import droove from './startupImages/droove.jpeg.jpg'
@@ -109,7 +110,7 @@ import c2 from './Gallery/c2.jpg'
 
 
 export {
-    logo,eSummit,innobuzz,ipl,Ted,businessModel,GoHiking,NPF,grapixifin,homvery,igdrones,lancyfirm,wasper,walkingpal,tourev,sewfin,
+    logo,Chai,eSummit,innobuzz,ipl,Ted,businessModel,GoHiking,NPF,grapixifin,homvery,igdrones,lancyfirm,wasper,walkingpal,tourev,sewfin,
     ser,FXuav,furSphere,cosmoinfinitas,droove,aboutLogo,east,interno,satt,c2,c1,b3,b2,b1,a1,a2,a3,Iit,Kiit,Lnm,Mayanj,
     Quote,Aman,Orissa,Harekrushna,debraj,
     arindam,pratyush,sudipta,snehanjali,astha,dinesh,swapnita,pratyasha,ashish,ume,swapna,anannya,abhinab,shahzada,devraj,pragya,
