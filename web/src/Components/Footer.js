@@ -67,6 +67,7 @@ const Footer=()=>{
 
             </div>
           </div>
+          <div className="links_footer flex lg:gap-x-20">
           <div className="sb_footer-links_div">
             <h4 className="underline">Useful Links</h4>
             <ul>
@@ -137,6 +138,8 @@ const Footer=()=>{
                   </li>
                 </ul>
           </div>
+          </div>
+          
           
           
         </div>
