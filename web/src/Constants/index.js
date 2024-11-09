@@ -4,6 +4,7 @@ import {
   ipl,
   Ted,
   Chai,
+  boeing,
   businessModel,
   GoHiking,
   NPF,
@@ -70,6 +71,16 @@ export const navLinks = [
   },
 ];
 const events = [
+  {
+    title: "BUILD 4.0 Sensitization Camp",
+    icon: boeing,
+    iconBg: "#E6DEDD",
+    date: "October 2024",
+    points: [
+      "E-Cell, VSSUT, in partnership with Boeing India and KIIT TBI, successfully concluded an extraordinary event that empowered students to unleash their potential. Participants embraced the challenge, brought forward groundbreaking ideas, and created a meaningful impact."
+    ],
+    site: "",
+  },
   {
     title: "Chai pe Charcha ",
     icon: Chai,
