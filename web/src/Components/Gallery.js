@@ -57,6 +57,9 @@ import Img5 from "../assets/Gallery/b2.webp";
 import Img6 from "../assets/Gallery/b3.webp";
 import Img7 from "../assets/Gallery/c1.webp";
 import Img8 from "../assets/Gallery/c2.jpg";
+import Img9 from "../assets/Gallery/d1.JPG";
+import Img10 from "../assets/Gallery/d2.jpg";
+import Img11 from "../assets/Gallery/d3.JPG";
 
 import { motion } from "framer-motion";
 import { styles } from "../styles";
@@ -95,6 +98,18 @@ const Gallery = () => {
     {
       id: 8,
       imgSrc: Img8,
+    },
+    {
+      id: 9,
+      imgSrc: Img9,
+    },
+    {
+      id: 10,
+      imgSrc: Img10,
+    },
+    {
+      id: 11,
+      imgSrc: Img11,
     },
   ];
   const [model, setModel] = useState(false);

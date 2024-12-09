@@ -15,7 +15,7 @@ function Team() {
           alt=""
         />
       </div>
-      <div className="m-2 z-40 ">
+      <div className="m-2 z-40 mt-16">
          <span class=" bg-gradient-to-r from-slate-800 to-slate-600  text-blue-800 text-3xl  font-semibold me-2 px-2.5 py-0.5 rounded dark:bg-transperent dark:text-blue-100 ">Faculty Advisors</span>
       </div>
       <div className="flex flex-wrap mt-[-14px] justify-center items-center mb-14 gap-7 p-10 glass ">
@@ -31,16 +31,16 @@ function Team() {
             <div class="secname">{team.name}</div>
             <div class="about">{team.designation}</div>
             <div class="social-icons">
-            <a href="#" className=" XTwitter flex justify-center items-center text-2xl">
+            <a href={team.tlink} className=" XTwitter flex justify-center items-center text-2xl">
                 <div className="z-40 flex justify-center items-center text-zinc-100 iconbeat "><FontAwesomeIcon icon={faXTwitter}/></div>
               </a>
-              <a href="#" className="Facebook flex justify-center items-center text-2xl">
+              <a href={team.flink} className="Facebook flex justify-center items-center text-2xl">
                 <div className="z-40 flex justify-center items-center text-zinc-100 iconbeat "><FontAwesomeIcon icon={faFacebook}/></div>
               </a>
-              <a href="#" className="Linkedin flex justify-center items-center text-2xl">
+              <a href={team.llink} className="Linkedin flex justify-center items-center text-2xl">
                 <div className="z-40 flex justify-center items-center text-zinc-100 iconbeat "><FontAwesomeIcon icon={faLinkedinIn}/></div>
               </a>
-              <a href="#" className="Instagram flex justify-center items-center text-2xl">
+              <a href={team.ilink} className="Instagram flex justify-center items-center text-2xl">
                 <div className="z-40 flex justify-center items-center text-zinc-100 iconbeat "><FontAwesomeIcon icon={faInstagram}/></div>
               </a>
             </div>
@@ -66,16 +66,16 @@ function Team() {
             <div class="secname">{team.name}</div>
             <div class="about">{team.designation}</div>
             <div class="social-icons">
-            <a href="#" className=" XTwitter flex justify-center items-center text-2xl">
+              <a href={team.tlink} className=" XTwitter flex justify-center items-center text-2xl">
                 <div className="z-40 flex justify-center items-center text-zinc-100 iconbeat "><FontAwesomeIcon icon={faXTwitter}/></div>
               </a>
-              <a href="#" className="Facebook flex justify-center items-center text-2xl">
+              <a href={team.flink} className="Facebook flex justify-center items-center text-2xl">
                 <div className="z-40 flex justify-center items-center text-zinc-100 iconbeat "><FontAwesomeIcon icon={faFacebook}/></div>
               </a>
-              <a href="#" className="Linkedin flex justify-center items-center text-2xl">
+              <a href={team.llink} className="Linkedin flex justify-center items-center text-2xl">
                 <div className="z-40 flex justify-center items-center text-zinc-100 iconbeat "><FontAwesomeIcon icon={faLinkedinIn}/></div>
               </a>
-              <a href="#" className="Instagram flex justify-center items-center text-2xl">
+              <a href={team.ilink} className="Instagram flex justify-center items-center text-2xl">
                 <div className="z-40 flex justify-center items-center text-zinc-100 iconbeat "><FontAwesomeIcon icon={faInstagram}/></div>
               </a>
             </div>
@@ -100,16 +100,16 @@ function Team() {
             <div class="secname">{team.name}</div>
             <div class="about">{team.designation}</div>
             <div class="social-icons">
-            <a href="#" className=" XTwitter flex justify-center items-center text-2xl">
+            <a href={team.tlink} className=" XTwitter flex justify-center items-center text-2xl">
                 <div className="z-40 flex justify-center items-center text-zinc-100 iconbeat "><FontAwesomeIcon icon={faXTwitter}/></div>
               </a>
-              <a href="#" className="Facebook flex justify-center items-center text-2xl">
+              <a href={team.flink} className="Facebook flex justify-center items-center text-2xl">
                 <div className="z-40 flex justify-center items-center text-zinc-100 iconbeat "><FontAwesomeIcon icon={faFacebook}/></div>
               </a>
-              <a href="#" className="Linkedin flex justify-center items-center text-2xl">
+              <a href={team.llink} className="Linkedin flex justify-center items-center text-2xl">
                 <div className="z-40 flex justify-center items-center text-zinc-100 iconbeat "><FontAwesomeIcon icon={faLinkedinIn}/></div>
               </a>
-              <a href="#" className="Instagram flex justify-center items-center text-2xl">
+              <a href={team.ilink} className="Instagram flex justify-center items-center text-2xl">
                 <div className="z-40 flex justify-center items-center text-zinc-100 iconbeat "><FontAwesomeIcon icon={faInstagram}/></div>
               </a>
             </div>
@@ -117,13 +117,47 @@ function Team() {
         ))}
       </div>
 
-      {/* jmember */}
+      {/* exmember */}
+      <div className="m-2 z-40 mt-16">
+         <span class=" bg-gradient-to-r  from-slate-800 to-slate-600  text-blue-800 text-3xl font-semibold me-2 px-2.5 py-0.5 rounded dark:bg-transperent dark:text-blue-100 ">Ex-Leads</span>
+      </div>
+      <div className="flex flex-wrap mt-[-14px] justify-center items-center mx-7 gap-7 py-10 glass">
+        {teams.exmember.map((team, index) => (
+          <div class="wrapper m-4 mt-24 mb-28 ">
+            <div class="img-area">
+              <div class="inner-area bg-slate-100">
+                <img src={team.url} alt="" />
+              </div>
+            </div>
+            <div class="effect"></div>
+            <div class="name">{team.name}</div>
+            <div class="secname">{team.name}</div>
+            <div class="about">Ex-{team.designation}</div>
+            <div class="social-icons">
+            <a href={team.tlink} className=" XTwitter flex justify-center items-center text-2xl">
+                <div className="z-40 flex justify-center items-center text-zinc-100 iconbeat "><FontAwesomeIcon icon={faXTwitter}/></div>
+              </a>
+              <a href={team.flink} className="Facebook flex justify-center items-center text-2xl">
+                <div className="z-40 flex justify-center items-center text-zinc-100 iconbeat "><FontAwesomeIcon icon={faFacebook}/></div>
+              </a>
+              <a href={team.llink} className="Linkedin flex justify-center items-center text-2xl">
+                <div className="z-40 flex justify-center items-center text-zinc-100 iconbeat "><FontAwesomeIcon icon={faLinkedinIn}/></div>
+              </a>
+              <a href={team.ilink} className="Instagram flex justify-center items-center text-2xl">
+                <div className="z-40 flex justify-center items-center text-zinc-100 iconbeat "><FontAwesomeIcon icon={faInstagram}/></div>
+              </a>
+            </div>
+          </div>
+        ))}
+      </div>
+
+      {/* cmembers */}
       <div className="m-2 z-40 mt-16">
          <span class=" bg-gradient-to-r  from-slate-800 to-slate-600  text-blue-800 text-3xl font-semibold me-2 px-2.5 py-0.5 rounded dark:bg-transperent dark:text-blue-100 ">Core Members</span>
       </div>
-      <div className="flex flex-wrap mt-[-14px] justify-center items-center mx-7 gap-7 py-10 glass">
-        {teams.Jmember.map((team, index) => (
-          <div class="wrapper m-4 mt-24 mb-28 ">
+      <div className="flex flex-wrap mt-[-14px] justify-center items-center mx-7 gap-7 py-10 glass ">
+        {teams.cmember.map((team, index) => (
+          <div class="wrapper m-4 mt-24 mb-28">
             <div class="img-area">
               <div class="inner-area bg-slate-100">
                 <img src={team.url} alt="" />
@@ -134,16 +168,16 @@ function Team() {
             <div class="secname">{team.name}</div>
             <div class="about">{team.designation}</div>
             <div class="social-icons">
-            <a href="#" className=" XTwitter flex justify-center items-center text-2xl">
+            <a href={team.tlink} className=" XTwitter flex justify-center items-center text-2xl">
                 <div className="z-40 flex justify-center items-center text-zinc-100 iconbeat "><FontAwesomeIcon icon={faXTwitter}/></div>
               </a>
-              <a href="#" className="Facebook flex justify-center items-center text-2xl">
+              <a href={team.flink} className="Facebook flex justify-center items-center text-2xl">
                 <div className="z-40 flex justify-center items-center text-zinc-100 iconbeat "><FontAwesomeIcon icon={faFacebook}/></div>
               </a>
-              <a href="#" className="Linkedin flex justify-center items-center text-2xl">
+              <a href={team.llink} className="Linkedin flex justify-center items-center text-2xl">
                 <div className="z-40 flex justify-center items-center text-zinc-100 iconbeat "><FontAwesomeIcon icon={faLinkedinIn}/></div>
               </a>
-              <a href="#" className="Instagram flex justify-center items-center text-2xl">
+              <a href={team.ilink} className="Instagram flex justify-center items-center text-2xl">
                 <div className="z-40 flex justify-center items-center text-zinc-100 iconbeat "><FontAwesomeIcon icon={faInstagram}/></div>
               </a>
             </div>
