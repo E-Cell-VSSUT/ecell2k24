@@ -42,36 +42,38 @@ import east from './WingImages/east.png'
 import interno from './WingImages/interno.png'
 import satt from './WingImages/satt.png'
 
-import Aneek from './Team/Aneek.jpg'
-import Angela from './Team/Angela.png'
-import Anshu from './Team/anshu.jpg'
-import Baishakhi from './Team/Baishakhi Guin_.jpg'
-import Debi from './Team/Debi.jpg'
-import Isita from './Team/Isita Naik.jpg'
-import Nikunj from './Team/Nikunj Agarwal.jpg'
-import payoshni from './Team/Payoshni_behera.jpg'
-import prateek from './Team/prateek.jpg'
-import payal from './Team/Payal.jpg'
-import rahul from './Team/rahul.jpg'
-import Shailesh from './Team/Shaileshmishra.jpg'
-import shaswata from './Team/Shashwata_20240105233646.png'
-import Sidrah from './Team/Sidrah.jpg'
-import shradha from './Team/Shradha.jpeg'
-import sonali from './Team/Sonali.jpg'
-import subham from './Team/Subham.jpg'
-import raj from './Team/Raj.jpg'
+import Aneek from './Team/team22/Aneek.jpg'
+import Angela from './Team/team22/Angela.png'
+import Anshu from './Team/team22/anshu.jpg'
+import Baishakhi from './Team/team22/Baishakhi Guin_.jpg'
+import Debi from './Team/team22/Debi.jpg'
+import Isita from './Team/team22/Isita Naik.jpg'
+import Nikunj from './Team/team22/Nikunj Agarwal.jpg'
+import payoshni from './Team/team22/Payoshni_behera.jpg'
+import prateek from './Team/team22/prateek.jpg'
+import payal from './Team/team22/Payal.jpg'
+import rahul from './Team/team22/rahul.jpg'
+import Shailesh from './Team/team22/Shaileshmishra.jpg'
+import shaswata from './Team/team22/Shashwata_20240105233646.png'
+import Sidrah from './Team/team22/Sidrah.jpg'
+import shradha from './Team/team22/Shradha.jpeg'
+import sonali from './Team/team22/Sonali.jpg'
+import subham from './Team/team22/Subham.jpg'
+import raj from './Team/team22/Raj.jpg'
+import harish from './Team/team22/Harish.jpg'
+import sutej from './Team/team22/Sutej Patra.jpeg'
 
 import anil from './Team/FactAdv/anil-kumar-murmu.jpg'
 import prangya from './Team/FactAdv/prangya-mohanty.jpg'
 
 
-import Harekrushna from './Team/Harekrushna.jpg'
+import Harekrushna from './Team/team23/Harekrushna.jpg'
 import arindam from './Team/team23/arindam.jpg'
 import pratyush from './Team/team23/Pratyush Panda.JPG'
 import sudipta from './Team/team23/Sudipta Padhi.jpg'
 import snehanjali from './Team/team23/SNEHANJALI GAGARIA.jpg'
 import astha from './Team/team23/Astha Prava Sahu.jpg'
-import dinesh from './Team/team23/Dinesh Dinu.jpg'
+import dinesh from './Team/team23/Dinesh Pinninti.jpg'
 import swapnita from './Team/team23/Swapnita Singh.jpg'
 import pratyasha from './Team/team23/Pratyasha Panda.jpg'
 import ashish from './Team/team23/Ashish Pradhan.jpg'
@@ -91,12 +93,16 @@ import hitesh from './Team/team23/Hitesh Kumar Palo.jpg'
 import shanti from './Team/team23/Shanti sworup Biswal.jpg'
 import simon from './Team/team23/Simon KP.png'
 import ashirbad from './Team/team23/ASHIRBAD TRIPATHY.jpg'
-import sai from './Team/team23/Sai sidharth Dash.jpg'
+import sai from './Team/team23/Sai sidharth Dash.webp'
 import nishant from './Team/team23/Nishant Kumar Singh.jpg'
 import debraj from './Team/team23/Debraj Beura.jpg'
+import adishree from './Team/team23/Adi Shree.jpg'
+import satyam from './Team/team23/Satyam Nayak.jpg'
+import sadashiv from './Team/team23/Sadashiv Sahoo.jpeg'
 
 
-
+import dibya from './Team/team24/Dibya prakash Subudhi.jpg'
+import lipika from './Team/team24/Lipika Ray.jpeg'
 
 
 import a1 from './Gallery/a1.webp'
@@ -113,8 +119,9 @@ import c2 from './Gallery/c2.jpg'
 export {
     logo,Chai,boeing,eSummit,innobuzz,ipl,Ted,businessModel,GoHiking,NPF,grapixifin,homvery,igdrones,lancyfirm,wasper,walkingpal,tourev,sewfin,
     ser,FXuav,furSphere,cosmoinfinitas,droove,aboutLogo,east,interno,satt,c2,c1,b3,b2,b1,a1,a2,a3,Iit,Kiit,Lnm,Mayanj,
-    Quote,Aman,Orissa,Harekrushna,debraj,
+    Quote,Aman,Orissa,Harekrushna,debraj, adishree,
     arindam,pratyush,sudipta,snehanjali,astha,dinesh,swapnita,pratyasha,ashish,ume,swapna,anannya,abhinab,shahzada,devraj,pragya,
     shwetanjali,rakesh,om,satyashree,yashika,hitesh,shanti,simon,ashirbad,sai,nishant,prangya,anil,Isita,Debi,Baishakhi,Angela,Aneek,Nikunj,
-    payoshni,prateek,Shailesh,rahul,payal,shaswata,Sidrah,shradha,sonali,subham,raj,Anshu
+    payoshni,prateek,Shailesh,rahul,payal,shaswata,Sidrah,shradha,sonali,subham,raj,Anshu,harish,sutej,satyam,sadashiv,
+    dibya, lipika,
 };
