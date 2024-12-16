@@ -184,7 +184,7 @@ const startups = [
     name: "WalkingPal",
     site: "https://www.walkingpal.in/",
     about:
-      " IG Drones is setting new standards in delivering solution using AI,ML, Satellite Imagery,Big Data etc to domain specific Industries.",
+      ' WalkingPal is an innovative startup aiming to transform last-mile commuting into a more enjoyable, eco-friendly, and social experience. It offers a unique "walking buddy" app, connecting users with others heading in the same direction.',
     url: walkingpal,
   },
   {

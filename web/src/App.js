@@ -61,7 +61,6 @@ function App() {
                 <Contact setLoading={setLoading} loading={loading} />
                 
               </div>
-              <Team />
             </div>
           }
         />

@@ -15,7 +15,7 @@ function Team() {
           alt=""
         />
       </div>
-      <div className="m-2 z-40 mt-16">
+      <div className="m-2 z-10 mt-16">
          <span class=" bg-gradient-to-r from-slate-800 to-slate-600  text-blue-800 text-3xl  font-semibold me-2 px-2.5 py-0.5 rounded dark:bg-transperent dark:text-blue-100 ">Faculty Advisors</span>
       </div>
       <div className="flex flex-wrap mt-[-14px] justify-center items-center mb-14 gap-7 p-10 glass ">
@@ -50,7 +50,7 @@ function Team() {
 
       {/* Leads */}
 
-      <div className="m-2 z-40">
+      <div className="m-2 z-10">
          <span class=" bg-gradient-to-r  from-slate-800 to-slate-600  text-blue-800 text-3xl font-semibold me-2 px-2.5 py-0.5 rounded dark:bg-transperent dark:text-blue-100 ">Leads</span>
       </div>
       <div className="flex  mt-[-14px] flex-wrap justify-center items-center gap-7 mx-7 py-10 glass">
@@ -84,7 +84,7 @@ function Team() {
       </div>
 
       {/* members */}
-      <div className="m-2 z-40 mt-16">
+      <div className="m-2 z-10 mt-16">
          <span class=" bg-gradient-to-r  from-slate-800 to-slate-600  text-blue-800 text-3xl font-semibold me-2 px-2.5 py-0.5 rounded dark:bg-transperent dark:text-blue-100 ">Domain Leads</span>
       </div>
       <div className="flex flex-wrap mt-[-14px] justify-center items-center mx-7 gap-7 py-10 glass ">
@@ -118,7 +118,7 @@ function Team() {
       </div>
 
       {/* exmember */}
-      <div className="m-2 z-40 mt-16">
+      <div className="m-2 z-10 mt-16">
          <span class=" bg-gradient-to-r  from-slate-800 to-slate-600  text-blue-800 text-3xl font-semibold me-2 px-2.5 py-0.5 rounded dark:bg-transperent dark:text-blue-100 ">Ex-Leads</span>
       </div>
       <div className="flex flex-wrap mt-[-14px] justify-center items-center mx-7 gap-7 py-10 glass">
@@ -152,7 +152,7 @@ function Team() {
       </div>
 
       {/* cmembers */}
-      <div className="m-2 z-40 mt-16">
+      <div className="m-2 z-10 mt-16">
          <span class=" bg-gradient-to-r  from-slate-800 to-slate-600  text-blue-800 text-3xl font-semibold me-2 px-2.5 py-0.5 rounded dark:bg-transperent dark:text-blue-100 ">Core Members</span>
       </div>
       <div className="flex flex-wrap mt-[-14px] justify-center items-center mx-7 gap-7 py-10 glass ">
