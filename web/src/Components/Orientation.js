@@ -50,7 +50,7 @@ export default function Home() {
 
   const ref = useRef();
 
-  const eventDate = new Date("2025-02-11T11:00:00");
+  const eventDate = new Date("2025-02-12T17:00:00");
 
   function getTimeRemaining(endTime) {
     const total = Date.parse(endTime) - Date.parse(new Date());
@@ -58,7 +58,7 @@ export default function Home() {
       total,
       days: Math.floor(total / (1000 * 60 * 60 * 24)),
       hours: Math.floor((total / (1000 * 60 * 60)) % 24),
-      minutes: Math.floor((total / 1000 * 60) % 60),
+      minutes: Math.floor((total / (1000 * 60)) % 60),
       seconds: Math.floor((total / 1000) % 60),
     };
   }
