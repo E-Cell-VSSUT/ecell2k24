@@ -42,48 +42,50 @@ function App() {
          /> 
          </div>
          : 
-         <BrowserRouter>
-         <Navbar />
-         <StarsCanvas />
-      <Routes>
-        <Route
-          path="/"
-          element={
-            <div className="relative z-0 bg-primary">
-                <Home />
-              <About />
-              <Events />
-              <Gallery />
-              <Startups />
-              <Wings />
-              <Terstimonials />
+       <BrowserRouter>
+        <Routes>
+          <Route
+            path="/"
+            element={
               <div className="relative z-0 bg-primary">
+                <Navbar />
                 <StarsCanvas />
-                <Contact setLoading={setLoading} loading={loading} />
-                
+                <Home />
+                <About />
+                <Events />
+                <Gallery />
+                <Startups />
+                <Wings />
+                <Terstimonials />
+                <div className="relative z-0 bg-primary">
+                  <StarsCanvas />
+                  <Contact setLoading={setLoading} loading={loading} />
+                </div>
+                <Footer />
               </div>
-            </div>
-          }
-        />
-        <Route
-          path="/team"
-          element={
-            <div>
-              <Team /> 
-              
-            </div>
-          }
-        />
-        <Route
-          path="/orientation-2k25"
-          element={
-            <div>
-              <Orientation />
-            </div>
-          }
-        />
-      </Routes>
-      <Footer />
+            }
+          />
+          <Route
+            path="/team"
+            element={
+              <div>
+                <Navbar />
+                <StarsCanvas />
+                <Team /> 
+                <Footer />
+              </div>
+            }
+          />
+          <Route
+            path="/orientation-2k25"
+            element={
+              <div>
+                <Navbar />
+                <Orientation />
+              </div>
+            }
+          />
+        </Routes>
     </BrowserRouter>
 }
     </div>
