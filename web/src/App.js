@@ -11,7 +11,8 @@ import {
   Wings,
   StarsCanvas,
   Team,
-  Footer
+  Orientation,
+  Footer,
 } from "./Components";
 
  import { useState, useEffect } from "react";
@@ -70,6 +71,14 @@ function App() {
             <div>
               <Team /> 
               
+            </div>
+          }
+        />
+        <Route
+          path="/orientation-2k25"
+          element={
+            <div>
+              <Orientation />
             </div>
           }
         />
