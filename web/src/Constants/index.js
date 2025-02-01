@@ -26,7 +26,7 @@ import {
   satt,
   Pratikash,
   c2,c1,b3,b2,b1,a1,a2,a3,
-  anil,prangya,
+  anil,auro,
   Iit,Kiit,Lnm,Mayanj,Aman,Orissa,Harekrushna,pratyush,sudipta,snehanjali,dinesh,swapnita,pratyasha,ashish,ume,swapna,abhinab,shahzada,pragya,
   shwetanjali,rakesh,om,satyashree,yashika,hitesh,shanti,simon,ashirbad,sai,nishant,arindam,Isita,Debi,Baishakhi,Angela,Aneek,Nikunj,
   payoshni,prateek,Shailesh,rahul,shaswata,Sidrah,shradha,sonali,subham,raj,Anshu,payal,debraj, anannya, adishree, dibya, harish, sutej, satyam,
@@ -288,7 +288,7 @@ const teams = {
 
   FactAdv:[
     {
-      name: "Mr. Anil Kumar murmu",
+      name: "Mr. Anil Kumar Murmu",
       designation: "Faculty Advisor",
       url: anil,
       ilink: "#",
@@ -297,9 +297,9 @@ const teams = {
       tlink: "#",
     },
     {
-      name: "Ms. Prangya Mohanty",
+      name: "Dr. Auro Kumar Sahoo",
       designation: "Faculty Advisor",
-      url: prangya,
+      url: auro,
       ilink: "#",
       flink: "#",
       llink: "#",

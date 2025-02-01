@@ -64,7 +64,7 @@ import harish from './Team/team22/Harish.jpg'
 import sutej from './Team/team22/Sutej Patra.jpeg'
 
 import anil from './Team/FactAdv/anil-kumar-murmu.jpg'
-import prangya from './Team/FactAdv/prangya-mohanty.jpg'
+import auro from './Team/FactAdv/auro-kumar-sahoo.jpg'
 
 
 import Harekrushna from './Team/team23/Harekrushna.jpg'
@@ -121,7 +121,7 @@ export {
     ser,FXuav,furSphere,cosmoinfinitas,droove,aboutLogo,east,interno,satt,c2,c1,b3,b2,b1,a1,a2,a3,Iit,Kiit,Lnm,Mayanj,
     Quote,Aman,Orissa,Harekrushna,debraj, adishree,
     arindam,pratyush,sudipta,snehanjali,astha,dinesh,swapnita,pratyasha,ashish,ume,swapna,anannya,abhinab,shahzada,devraj,pragya,
-    shwetanjali,rakesh,om,satyashree,yashika,hitesh,shanti,simon,ashirbad,sai,nishant,prangya,anil,Isita,Debi,Baishakhi,Angela,Aneek,Nikunj,
+    shwetanjali,rakesh,om,satyashree,yashika,hitesh,shanti,simon,ashirbad,sai,nishant,anil,auro,Isita,Debi,Baishakhi,Angela,Aneek,Nikunj,
     payoshni,prateek,Shailesh,rahul,payal,shaswata,Sidrah,shradha,sonali,subham,raj,Anshu,harish,sutej,satyam,sadashiv,
     dibya, lipika,
 };
