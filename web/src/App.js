@@ -77,7 +77,7 @@ function App() {
             }
           />
           <Route
-            path="/orientation-2k25"
+            path="/orientation-2k25/:startupId?"
             element={
               <div>
                 <Navbar />
