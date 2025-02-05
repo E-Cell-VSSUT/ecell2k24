@@ -1,43 +1,39 @@
 import React, { useState, useEffect, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { IoMdClose } from "react-icons/io";
-import { poster, logo } from "../assets"
-import { useParams } from 'react-router-dom'
+import { poster, logo } from "../assets";
+import { useParams } from "react-router-dom";
 // import { X, Menu } from "lucide-react";
 
 const Card = React.forwardRef(({ ...props }, ref) => (
   <div
     ref={ref}
     className="rounded-xl border bg-card text-card-foreground shadow"
-    {...props} />
-))
+    {...props}
+  />
+));
 
 const CardHeader = React.forwardRef(({ ...props }, ref) => (
-  <div
-    ref={ref}
-    className="flex flex-col space-y-1.5 p-6"
-    {...props} />
-))
+  <div ref={ref} className="flex flex-col space-y-1.5 p-6" {...props} />
+));
 
 const CardTitle = React.forwardRef(({ ...props }, ref) => (
   <div
     ref={ref}
     className="font-semibold leading-none tracking-tight"
-    {...props} />
-))
+    {...props}
+  />
+));
 
 const CardContent = React.forwardRef(({ ...props }, ref) => (
   <div ref={ref} className="p-6 pt-0" {...props} />
-))
+));
 
-const Button = React.forwardRef(({ className, variant, size, asChild = false, ...props }, ref) => {
-  return (
-    (<button
-      className={className}
-      ref={ref}
-      {...props} />)
-  );
-})
+const Button = React.forwardRef(
+  ({ className, variant, size, asChild = false, ...props }, ref) => {
+    return <button className={className} ref={ref} {...props} />;
+  }
+);
 
 export default function Home() {
   const [timer, setTimer] = useState({
@@ -92,73 +88,86 @@ export default function Home() {
         src={poster}
         alt="Background"
         layout="fill"
-        className="absolute inset-0 object-cover w-full h-full z-[0]"
+        className="absolute inset-0 object-cover w-full h-full z-[0] blur-[0.5px] brightness-50"
         priority
       />
 
       {/* Content Container */}
-      <div className="relative w-full min-h-screen flex flex-col items-center justify-center">
-        {/* Countdown Timer Card */}
-        <AnimatePresence>
-          {showCountdown && (
-            <motion.div
-              initial={{ opacity: 1, scale: 1 }}
-              exit={{ opacity: 0, scale: 0.5, y: -50, rotate: 45 }}
-              transition={{ duration: 0.5, ease: "easeInOut" }}
-              className="w-[92%] max-w-[500px] px-2 sm:px-0"
-            >
-              <Card className="relative p-4 sm:p-6 md:p-8 text-center bg-black/50 backdrop-blur-lg border border-white/20 shadow-2xl rounded-2xl">
-                <CardHeader className="p-4 sm:p-6">
-                  <CardTitle className="text-xl sm:text-2xl md:text-3xl font-bold text-white">
-                    E-Cell Orientation 2025
-                  </CardTitle>
-                  <p className="text-gray-300 text-xs sm:text-sm md:text-base mt-2">
-                    February 12, 2025 at 5:00 PM
-                  </p>
-                  {startupId && startupList[startupId] &&
-                    <p className="text-gray-300 text-xl mt-2">Your startup is {startupList[startupId]}!</p>
-                  }
-                </CardHeader>
-                <CardContent className="p-4">
-                  <div className="grid grid-cols-4 gap-1 sm:gap-2 md:gap-4 mb-6">
-                    {["days", "hours", "minutes", "seconds"].map((unit) => (
-                      <motion.div
-                        key={unit}
-                        initial={{ opacity: 0, scale: 0.8 }}
-                        animate={{ opacity: 1, scale: 1 }}
-                        transition={{ duration: 0.5, type: "spring", stiffness: 200 }}
-                        className="relative flex flex-col items-center p-2 sm:p-3 md:p-4 bg-white/10 rounded-xl shadow-xl backdrop-blur-md"
-                      >
-                        <AnimatePresence mode="wait">
-                          <motion.span
-                            key={timer[unit]}
-                            initial={{ y: 50, opacity: 0 }}
-                            animate={{ y: 0, opacity: 1 }}
-                            exit={{ y: -50, opacity: 0 }}
-                            transition={{ duration: 0.4, type: "tween" }}
-                            className="text-lg sm:text-2xl md:text-4xl lg:text-5xl font-bold text-white"
-                          >
-                            {timer[unit]}
-                          </motion.span>
-                        </AnimatePresence>
-                        <span className="text-[10px] sm:text-xs md:text-sm text-gray-300 uppercase mt-1">
-                          {unit}
-                        </span>
-                      </motion.div>
-                    ))}
-                  </div>
-                  {/* Register Button */}
-                  <Button
-                    onClick={() => {}}
-                    className="w-full max-w-xs bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-semibold py-2 sm:py-3 rounded-xl transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl text-sm sm:text-base"
-                  >
-                    Register Now
-                  </Button>
-                </CardContent>
-              </Card>
-            </motion.div>
-          )}
-        </AnimatePresence>
+      <div className="relative w-full min-h-screen flex flex-col items-center justify-center gap-1 ">
+        {startupId && startupList[startupId] && (
+          <div className="text-xl font-bold text-gray-300 border-2 p-1 sm:p-2 w-4/5 md:w-2/3 lg:w-1/2 text-center mx-auto rounded-3xl bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700">
+            Your startup is {startupList[startupId]}!
+          </div>
+        )}
+        <div className="flex flex-col md:flex-row items-center justify-around gap-8 md:gap-36 py-4">
+          <div className="flex flex-col justify-evenly text-white">
+            <h1 className="uppercase text-5xl sm:text-6xl md:text-8xl font-bold">welcome</h1>
+            <h1 className="uppercase text-5xl sm:text-6xl md:text-8xl font-bold">to</h1>
+            <h1 className="uppercase text-5xl sm:text-6xl md:text-8xl font-bold">e-nspire</h1>
+          </div>
+          {/* Countdown Timer Card */}
+          <AnimatePresence>
+            {showCountdown && (
+              <motion.div
+                initial={{ opacity: 1, scale: 1 }}
+                exit={{ opacity: 0, scale: 0.5, y: -50, rotate: 45 }}
+                transition={{ duration: 0.5, ease: "easeInOut" }}
+                className="w-[92%] max-w-[500px] px-2 sm:px-0"
+              >
+                <Card className="relative px-2.5 sm:px-4.5 md:px-7 text-center bg-black/50 backdrop-blur-lg border border-white/60 shadow-2xl rounded-2xl">
+                  <CardHeader className="p-4 sm:p-6">
+                    <CardTitle className="text-lg sm:text-xl md:text-2xl font-bold text-white">
+                      E-Cell Orientation 2025
+                    </CardTitle>
+                    <p className="text-gray-300 text-xs sm:text-sm md:text-base mt-2">
+                      February 12, 2025 at 5:00 PM
+                    </p>
+                  </CardHeader>
+                  <CardContent className="p-4">
+                    <div className="grid grid-cols-4 gap-1 sm:gap-1.5 md:gap-3 mb-5">
+                      {["days", "hours", "minutes", "seconds"].map((unit) => (
+                        <motion.div
+                          key={unit}
+                          initial={{ opacity: 0, scale: 0.8 }}
+                          animate={{ opacity: 1, scale: 1 }}
+                          transition={{
+                            duration: 0.5,
+                            type: "spring",
+                            stiffness: 200,
+                          }}
+                          className="relative flex flex-col items-center p-1 sm:p-2 md:p-3 bg-white/10 rounded-xl shadow-xl backdrop-blur-md"
+                        >
+                          <AnimatePresence mode="wait">
+                            <motion.span
+                              key={timer[unit]}
+                              initial={{ y: 50, opacity: 0 }}
+                              animate={{ y: 0, opacity: 1 }}
+                              exit={{ y: -50, opacity: 0 }}
+                              transition={{ duration: 0.4, type: "tween" }}
+                              className="text-sm sm:text-xl md:text-2xl lg:text-3xl font-bold text-white"
+                            >
+                              {timer[unit]}
+                            </motion.span>
+                          </AnimatePresence>
+                          <span className="text-[10px] sm:text-xs md:text-sm text-gray-300 uppercase mt-1">
+                            {unit}
+                          </span>
+                        </motion.div>
+                      ))}
+                    </div>
+                    {/* Register Button */}
+                    <Button
+                      onClick={() => {}}
+                      className="w-full max-w-xs bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-semibold py-2 sm:py-3 rounded-xl transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl text-sm sm:text-base"
+                    >
+                      Register Now
+                    </Button>
+                  </CardContent>
+                </Card>
+              </motion.div>
+            )}
+          </AnimatePresence>
+        </div>
       </div>
     </div>
   );
@@ -262,8 +271,5 @@ const startupList = {
   "2906e6a3-52cb-402a-bd51-121407d7e29b": "Truera",
   "10973343-1399-4cf8-ac4b-d7c5d7d3fc25": "Tonic.ai",
   "087ae08c-6467-471f-9e92-aedf8039663d": "Gretel.ai",
-  "dbd9d3ac-6f64-46db-be61-dd89e70279fc": "Mostly AI"
-}
-
-
-
+  "dbd9d3ac-6f64-46db-be61-dd89e70279fc": "Mostly AI",
+};

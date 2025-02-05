@@ -26,7 +26,7 @@ import ser from './startupImages/ser.png'
 
 import aboutLogo from './About/about.svg'
 
-import poster from './orientation-poster.jpeg'
+import poster from './orientation-poster.jpg'
 
 
 import Aman from './Testimonials/Aman.webp'

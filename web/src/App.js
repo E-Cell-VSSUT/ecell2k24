@@ -49,7 +49,7 @@ function App() {
             element={
               <div className="relative z-0 bg-primary">
                 <Navbar />
-                <StarsCanvas />
+                {/* <StarsCanvas /> */}
                 <Home />
                 <About />
                 <Events />
@@ -58,7 +58,7 @@ function App() {
                 <Wings />
                 <Terstimonials />
                 <div className="relative z-0 bg-primary">
-                  <StarsCanvas />
+                  {/* <StarsCanvas /> */}
                   <Contact setLoading={setLoading} loading={loading} />
                 </div>
                 <Footer />
@@ -70,7 +70,7 @@ function App() {
             element={
               <div>
                 <Navbar />
-                <StarsCanvas />
+                {/* <StarsCanvas /> */}
                 <Team /> 
                 <Footer />
               </div>
