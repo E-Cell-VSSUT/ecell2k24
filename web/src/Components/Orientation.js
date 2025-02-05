@@ -83,19 +83,10 @@ export default function Home() {
 
   return (
     <div className="relative min-h-screen w-full overflow-hidden">
-      {/* Background Image */}
-      <img
-        src={poster}
-        alt="Background"
-        layout="fill"
-        className="absolute inset-0 object-cover w-full h-full z-[0] blur-[0.5px] brightness-50"
-        priority
-      />
-
       {/* Content Container */}
-      <div className="relative w-full min-h-screen flex flex-col items-center justify-center gap-1 ">
+      <div className="relative w-full min-h-screen flex flex-col items-center justify-center gap-1">
         {startupId && startupList[startupId] && (
-          <div className="text-xl font-bold text-gray-300 border-2 p-1 sm:p-2 w-4/5 md:w-2/3 lg:w-1/2 text-center mx-auto rounded-3xl bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700">
+          <div className="text-xl font-bold text-gray-300 border-2 p-1 sm:p-2 w-4/5 md:w-2/3 lg:w-1/2 text-center mx-auto rounded-3xl bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 my-10">
             Your startup is {startupList[startupId]}!
           </div>
         )}
@@ -156,18 +147,26 @@ export default function Home() {
                       ))}
                     </div>
                     {/* Register Button */}
-                    <Button
+                    {/* <Button
                       onClick={() => {}}
                       className="w-full max-w-xs bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-semibold py-2 sm:py-3 rounded-xl transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl text-sm sm:text-base"
                     >
                       Register Now
                     </Button>
+                    */}
                   </CardContent>
                 </Card>
               </motion.div>
             )}
           </AnimatePresence>
         </div>
+        <img
+            src={poster}
+            alt="Background"
+            layout="fill"
+            className="object-cover z-[0] brightness-85 -rotate-[10deg]"
+            priority
+          />
       </div>
     </div>
   );
