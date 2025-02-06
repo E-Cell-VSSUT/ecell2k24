@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { styles } from "../styles";
 import { logo } from "../assets";
 import { slideIn } from "../utils/motion";
+import Announcement from './Announcement';
 
 function Home() {
   return (
@@ -44,6 +45,7 @@ function Home() {
             </span>
           </a>
         </motion.div>
+        <Announcement />
       </div>
       <StarsCanvas />
     </section>

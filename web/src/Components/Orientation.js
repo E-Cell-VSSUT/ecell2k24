@@ -11,8 +11,6 @@ import { AiOutlineLinkedin } from "react-icons/ai";
 import { BsInstagram } from "react-icons/bs";
 import { FaXTwitter } from 'react-icons/fa6';
 
-// import { X, Menu } from "lucide-react";
-
 export default function Home() {
   const [timer, setTimer] = useState({
     days: "00",
