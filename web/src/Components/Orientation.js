@@ -3,37 +3,15 @@ import { motion, AnimatePresence } from "framer-motion";
 import { IoMdClose } from "react-icons/io";
 import { poster, logo } from "../assets";
 import { useParams } from "react-router-dom";
+import { Link } from "react-router-dom";
+import { InstagramEmbed } from 'react-social-media-embed';
+
+import { BsFacebook } from "react-icons/bs";
+import { AiOutlineLinkedin } from "react-icons/ai";
+import { BsInstagram } from "react-icons/bs";
+import { FaXTwitter } from 'react-icons/fa6';
+
 // import { X, Menu } from "lucide-react";
-
-const Card = React.forwardRef(({ ...props }, ref) => (
-  <div
-    ref={ref}
-    className="rounded-xl border bg-card text-card-foreground shadow"
-    {...props}
-  />
-));
-
-const CardHeader = React.forwardRef(({ ...props }, ref) => (
-  <div ref={ref} className="flex flex-col space-y-1.5 p-6" {...props} />
-));
-
-const CardTitle = React.forwardRef(({ ...props }, ref) => (
-  <div
-    ref={ref}
-    className="font-semibold leading-none tracking-tight"
-    {...props}
-  />
-));
-
-const CardContent = React.forwardRef(({ ...props }, ref) => (
-  <div ref={ref} className="p-6 pt-0" {...props} />
-));
-
-const Button = React.forwardRef(
-  ({ className, variant, size, asChild = false, ...props }, ref) => {
-    return <button className={className} ref={ref} {...props} />;
-  }
-);
 
 export default function Home() {
   const [timer, setTimer] = useState({
@@ -43,7 +21,6 @@ export default function Home() {
     seconds: "00",
   });
   const [showCountdown, setShowCountdown] = useState(true);
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
   const { startupId } = useParams();
 
   const ref = useRef();
@@ -82,19 +59,27 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="relative min-h-screen w-full overflow-hidden">
+    <div className="relative w-full overflow-hidden">
       {/* Content Container */}
-      <div className="relative w-full min-h-screen flex flex-col items-center justify-center gap-1">
+      <div className="relative w-full min-h-[80vh] flex flex-col items-center justify-center gap-1">
         {startupId && startupList[startupId] && (
           <div className="text-xl font-bold text-gray-300 border-2 p-1 sm:p-2 w-4/5 md:w-2/3 lg:w-1/2 text-center mx-auto rounded-3xl bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 my-10">
             Your startup is {startupList[startupId]}!
           </div>
         )}
-        <div className="flex flex-col md:flex-row items-center justify-around gap-8 md:gap-36 py-4">
+        <div className="flex flex-col items-center justify-around gap-8 md:gap-36 py-4">
+          <div className="flex items-end gap-2">
+            <img 
+              src={logo}
+              width="80"
+              height="80"
+            />
+            <p className="text-sm text-gray-300">
+              presents...
+            </p>
+          </div>
           <div className="flex flex-col justify-evenly text-white">
-            <h1 className="uppercase text-5xl sm:text-6xl md:text-8xl font-bold">welcome</h1>
-            <h1 className="uppercase text-5xl sm:text-6xl md:text-8xl font-bold">to</h1>
-            <h1 className="uppercase text-5xl sm:text-6xl md:text-8xl font-bold">e-nspire</h1>
+            <h1 className="text-7xl sm:text-6xl md:text-8xl font-bold">E-NSPIRE</h1>
           </div>
           {/* Countdown Timer Card */}
           <AnimatePresence>
@@ -105,16 +90,6 @@ export default function Home() {
                 transition={{ duration: 0.5, ease: "easeInOut" }}
                 className="w-[92%] max-w-[500px] px-2 sm:px-0"
               >
-                <Card className="relative px-2.5 sm:px-4.5 md:px-7 text-center bg-black/50 backdrop-blur-lg border border-white/60 shadow-2xl rounded-2xl">
-                  <CardHeader className="p-4 sm:p-6">
-                    <CardTitle className="text-lg sm:text-xl md:text-2xl font-bold text-white">
-                      E-Cell Orientation 2025
-                    </CardTitle>
-                    <p className="text-gray-300 text-xs sm:text-sm md:text-base mt-2">
-                      February 12, 2025 at 5:00 PM
-                    </p>
-                  </CardHeader>
-                  <CardContent className="p-4">
                     <div className="grid grid-cols-4 gap-1 sm:gap-1.5 md:gap-3 mb-5">
                       {["days", "hours", "minutes", "seconds"].map((unit) => (
                         <motion.div
@@ -126,7 +101,7 @@ export default function Home() {
                             type: "spring",
                             stiffness: 200,
                           }}
-                          className="relative flex flex-col items-center p-1 sm:p-2 md:p-3 bg-white/10 rounded-xl shadow-xl backdrop-blur-md"
+                          className="relative p-2 flex flex-col items-center p-1 sm:p-2 md:p-3 bg-white/10 rounded-xl shadow-xl backdrop-blur-md"
                         >
                           <AnimatePresence mode="wait">
                             <motion.span
@@ -154,20 +129,82 @@ export default function Home() {
                       Register Now
                     </Button>
                     */}
-                  </CardContent>
-                </Card>
               </motion.div>
             )}
           </AnimatePresence>
         </div>
-        <img
-            src={poster}
-            alt="Background"
-            layout="fill"
-            className="object-cover z-[0] brightness-85 -rotate-[10deg]"
-            priority
-          />
+        <p className="text-gray-300 text-xs sm:text-sm md:text-base mt-2">
+          FEBRUARY 12 @ E-LEARNING CENTER
+        </p>
+
+        <div className="social-iicons mt-4 gap-3 flex justify-center items-center text-white">
+          <motion.a
+                whileHover={{ y: -5 }}
+                href="https://twitter.com/ecellvssut?lang=en"
+                className="twitter flex items-center justify-center "
+              >
+                
+                <FaXTwitter style={{ fontSize: '1em' }}e></FaXTwitter>
+          </motion.a>
+          <motion.a
+                whileHover={{ y: -5 }}
+                href="https://www.facebook.com/ecellvssut/"
+                className="facebook flex items-center justify-center"
+              >
+                <BsFacebook style={{ fontSize: '1em' }}></BsFacebook>
+          </motion.a>
+          <motion.a
+                whileHover={{ y: -5 }}
+                href="https://www.instagram.com/ecellvssut/?hl=en"
+                className="instagram flex items-center justify-center"
+              >
+                <BsInstagram style={{ fontSize: '1em' }}></BsInstagram>
+          </motion.a>
+          <motion.a
+                whileHover={{ y: -5 }}
+                href="https://in.linkedin.com/company/ecellvssut"
+                className="linkedin flex items-center justify-center"
+              >
+                <AiOutlineLinkedin style={{ fontSize: '1em' }}></AiOutlineLinkedin>
+          </motion.a>
+
+        </div>
       </div>
+
+      <div className="relative flex flex-col items-center">
+        <div className="absolute bg-gray-100 w-[150vw] h-[25vh] top-[-20px] left-[-10px] md:left-[-20px] z-[-2] rotate-[-5deg]"></div>
+        <h1 className="text-4xl font-bold text-black text-center pt-4 md:pt-10">E-CELL</h1>
+        <h1 className="text-2xl font-semibold text-gray-500 text-center italic">A Techno-Management Club</h1>
+
+        <Link
+          to={"/"}
+          className="mt-4 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-semibold py-2 px-5 sm:py-3 rounded-xl transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl text-sm sm:text-base"
+        >
+          Visit Website
+        </Link>
+      </div>
+
+      <div className="relative h-[20vh] mb-[10vh]">
+        <div className="absolute bg-violet-500 w-[150vw] h-[30vh] md:h-[35vh] top-[18px] left-[-15px] md:left-[-20px] rotate-[-5deg]"></div>
+        <div className="relative top-10 text-white flex flex-col items-center">
+          <h1 className="text-2xl md:text-3xl font-bold uppercase text-center pt-4 md:pt-16">Startup Quest</h1>
+          <p className="text-gray-300 italic text-lg text-center">Upcoming event...</p>
+          <ol className="mt-4 list-decimal text-sm w-[90vw] md:w-[40vw] md:text-lg list-inside">
+            <li>Scan the QR Code</li>
+            <li>Get your chosen Startup</li>
+            <li>Match with 2 others</li>
+            <li>Post your group selfie on Instagram & tag @ecellvssut</li>
+          </ol>
+        </div>
+      </div>
+
+      <div className="relative ">
+        <div className="absolute bg-red-500 w-[200vw] h-[90vh] z-[-1] top-[10px] left-[-30px] rotate-[-5deg]"></div>
+        <div className="flex justify-center items-center pt-20 pb-5 md:pt-36">
+          <InstagramEmbed url="https://www.instagram.com/p/DFfx-Fay7vT/" width={360} />
+        </div>
+      </div>
+
     </div>
   );
 }
