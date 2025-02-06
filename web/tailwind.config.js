@@ -17,7 +17,10 @@
         },
         screens: {
           xs: "450px",
-        }
+        },
+        fontFamily: {
+          bg: ['"BG"', 'Arial', 'sans-serif'],
+        },
       },
     },
     plugins: [],

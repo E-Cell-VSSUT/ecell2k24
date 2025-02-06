@@ -26,8 +26,6 @@ import ser from './startupImages/ser.png'
 
 import aboutLogo from './About/about.svg'
 
-import poster from './orientation-poster.png'
-
 
 import Aman from './Testimonials/Aman.webp'
 import Iit from './Testimonials/iitkgp.jpg'
@@ -119,7 +117,7 @@ import c2 from './Gallery/c2.jpg'
 
 export {
     logo,Chai,boeing,eSummit,innobuzz,ipl,Ted,businessModel,GoHiking,NPF,grapixifin,homvery,igdrones,lancyfirm,wasper,walkingpal,tourev,sewfin,
-    ser,FXuav,furSphere,cosmoinfinitas,droove,aboutLogo,east,interno,satt,c2,c1,b3,b2,b1,a1,a2,a3,Iit,Kiit,Lnm,Mayanj, poster,
+    ser,FXuav,furSphere,cosmoinfinitas,droove,aboutLogo,east,interno,satt,c2,c1,b3,b2,b1,a1,a2,a3,Iit,Kiit,Lnm,Mayanj,
     Quote,Aman,Orissa,Harekrushna,debraj, adishree,
     arindam,pratyush,sudipta,snehanjali,astha,dinesh,swapnita,pratyasha,ashish,ume,swapna,anannya,abhinab,shahzada,devraj,pragya,
     shwetanjali,rakesh,om,satyashree,yashika,hitesh,shanti,simon,ashirbad,sai,nishant,anil,auro,Isita,Debi,Baishakhi,Angela,Aneek,Nikunj,
