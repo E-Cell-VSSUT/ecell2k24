@@ -27,7 +27,6 @@ import ser from './startupImages/ser.png'
 import aboutLogo from './About/about.svg'
 
 
-
 import Aman from './Testimonials/Aman.webp'
 import Iit from './Testimonials/iitkgp.jpg'
 import Kiit from './Testimonials/kiit.jpg'
