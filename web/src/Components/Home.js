@@ -45,9 +45,9 @@ function Home() {
             </span>
           </a>
         </motion.div>
+        <StarsCanvas />
         <Announcement />
       </div>
-      <StarsCanvas />
     </section>
   );
 }

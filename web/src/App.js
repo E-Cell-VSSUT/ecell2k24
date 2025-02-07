@@ -43,35 +43,34 @@ function App() {
          </div>
          : 
        <BrowserRouter>
-        <Routes>
-          <Route
-            path="/"
-            element={
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <div className="relative z-0 bg-primary">
+              <Navbar />
+              <Home />
+              <About />
+              <Events />
+              <Gallery />
+              <Startups />
+              <Wings />
+              <Terstimonials />
               <div className="relative z-0 bg-primary">
-                <Navbar />
-                {/* <StarsCanvas /> */}
-                <Home />
-                <About />
-                <Events />
-                <Gallery />
-                <Startups />
-                <Wings />
-                <Terstimonials />
-                <div className="relative z-0 bg-primary">
-                  {/* <StarsCanvas /> */}
-                  <Contact setLoading={setLoading} loading={loading} />
-                </div>
+                <StarsCanvas />
+                <Contact setLoading={setLoading} loading={loading} />
                 <Footer />
               </div>
-            }
-          />
+            </div>
+          }
+        />
           <Route
             path="/team"
             element={
               <div>
                 <Navbar />
                 {/* <StarsCanvas /> */}
-                <Team /> 
+                <Team />
                 <Footer />
               </div>
             }
@@ -86,6 +85,7 @@ function App() {
             }
           />
         </Routes>
+
     </BrowserRouter>
 }
     </div>
