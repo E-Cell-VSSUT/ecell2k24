@@ -181,7 +181,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="relative flex flex-col items-center">
+      <div className="relative flex flex-col items-center z-[0]">
         <div className="absolute bg-gray-100 w-[150vw] h-[25vh] md:h-[30vh] top-[-20px] left-[-10px] md:left-[-20px] z-[-2] rotate-[-5deg] md:rotate-[-3deg]"></div>
         <h1 className="text-4xl md:text-6xl font-bold text-black text-center pt-4 md:pt-10">E-CELL</h1>
         <h1 className="text-2xl font-semibold text-gray-500 text-center italic">A Techno-Management Club</h1>
@@ -194,7 +194,7 @@ export default function Home() {
         </Link>
       </div>
 
-      <div className="relative h-[20vh] mb-[20vh]">
+      <div className="relative h-[20vh] mb-[20vh] z-[0]">
         <div className="absolute bg-violet-500 w-[150vw] h-[45vh] md:h-[50vh] top-[18px] left-[-20px] md:left-[-20px] rotate-[-5deg] md:rotate-[-3deg]"></div>
         <div className="relative top-10 text-white flex flex-col items-center">
           <h1 className="text-2xl md:text-3xl font-bold uppercase text-center pt-4 md:pt-16">Startup Quest</h1>
@@ -217,7 +217,7 @@ export default function Home() {
       </div>
 
       <div className="relative" onWheel={handleScroll}>
-        <div className="absolute bg-primary w-[200vw] h-[90vh] z-[-1] top-[10px] left-[-30px] rotate-[-5deg]"></div>
+        <div className="absolute bg-primary w-[200vw] h-[100vh] z-[-1] top-[10px] left-[-30px] rotate-[-5deg] md:rotate-[-3deg]"></div>
         <div className="flex flex-nowrap overflow-x-scroll md:items-center md:justify-center pt-28 pb-5 md:pt-44 gap-4 mx-2">
           <div className="w-[100vw] md:w-full flex justify-center">
             <InstagramEmbed url="https://www.instagram.com/p/DFfx-Fay7vT/" width={360} />
