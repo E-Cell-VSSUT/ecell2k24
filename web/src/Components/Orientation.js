@@ -144,7 +144,7 @@ export default function Home() {
           </AnimatePresence>
         </div>
         <p className="text-gray-300 text-sm md:text-base mt-2">
-          FEBRUARY 12 @ E-LEARNING CENTER
+          FEBRUARY 12 @ E-LEARNING CENTRE
         </p>
 
         <div className="social-iicons mt-4 gap-3 flex justify-center items-center text-white">
@@ -204,7 +204,7 @@ export default function Home() {
             ([
               "Scan the QR Code",
               "Get your chosen Startup",
-              "Find the 2 other people having the same Startup name",
+              "Find the 3 other people having the same Startup name",
               "Post your group selfie on Instagram & tag @ecellvssut"
             ]).map(it => 
               <li className="bg-violet-600 m-2 p-2 rounded-lg">
