@@ -11,7 +11,8 @@ import {
   Wings,
   StarsCanvas,
   Team,
-  Footer
+  Orientation,
+  Footer,
 } from "./Components";
 
  import { useState, useEffect } from "react";
@@ -41,15 +42,14 @@ function App() {
          /> 
          </div>
          : 
-         <BrowserRouter>
-         <Navbar />
-         <StarsCanvas />
+       <BrowserRouter>
       <Routes>
         <Route
           path="/"
           element={
             <div className="relative z-0 bg-primary">
-                <Home />
+              <Navbar />
+              <Home />
               <About />
               <Events />
               <Gallery />
@@ -59,22 +59,33 @@ function App() {
               <div className="relative z-0 bg-primary">
                 <StarsCanvas />
                 <Contact setLoading={setLoading} loading={loading} />
-                
+                <Footer />
               </div>
             </div>
           }
         />
-        <Route
-          path="/team"
-          element={
-            <div>
-              <Team /> 
-              
-            </div>
-          }
-        />
-      </Routes>
-      <Footer />
+          <Route
+            path="/team"
+            element={
+              <div>
+                <Navbar />
+                {/* <StarsCanvas /> */}
+                <Team />
+                <Footer />
+              </div>
+            }
+          />
+          <Route
+            path="/orientation-2k25/:startupId?"
+            element={
+              <div className="relative z-0">
+                <StarsCanvas /> 
+                <Orientation />
+              </div>
+            }
+          />
+        </Routes>
+
     </BrowserRouter>
 }
     </div>
