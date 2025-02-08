@@ -144,7 +144,7 @@ export default function Home() {
           </AnimatePresence>
         </div>
         <p className="text-gray-300 text-sm md:text-base mt-2">
-          FEBRUARY 12 @ E-LEARNING CENTER
+          FEBRUARY 12 @ E-LEARNING CENTRE
         </p>
 
         <div className="social-iicons mt-4 gap-3 flex justify-center items-center text-white">
