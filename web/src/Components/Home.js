@@ -8,7 +8,12 @@ import Announcement from './Announcement';
 
 function Home() {
   return (
-    <section id="home" className="relative w-screen h-screen mx-auto mt-20">
+    <section id="home" className="relative w-screen h-screen mx-auto mt-10">
+      <StarsCanvas />
+      <div className="absolute inset-0 pointer-events-none" style={{ zIndex: -1 }}>
+        <div className="absolute w-full h-full bg-gradient-to-r from-blue-600/40 via-white/5 to-purple-700/40 rounded-full blur-3xl top-1/2 left-1/4 animate-float" />
+        <div className="absolute w-full h-full bg-gradient-to-r from-purple-700/40 via-white/5 to-blue-700/20 rounded-full blur-3xl top-1/2 right-1/4 animate-float-delay" />
+      </div>
       <div
         className={`${styles.paddingX} absolute inset-0 top-[120px] max-w-7xl mx-auto flex flex-col items-start gap-5 my-19`}
       >
@@ -45,9 +50,12 @@ function Home() {
             </span>
           </a>
         </motion.div>
-        <StarsCanvas />
-        <Announcement />
+       
+        
       </div>
+       {/* <StarsCanvas /> */}
+       <div className="absolute flex justify-center mx-0 items-end -bottom-14 w-full z-10 px-9"><Announcement/></div>
+      <div className="absolute m-0 p-0 w-screen h-[250px] bg-slate-950 blur-3xl animate-float-delay -bottom-36 pointer-events-none" />
     </section>
   );
 }

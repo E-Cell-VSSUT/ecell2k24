@@ -8,7 +8,7 @@ import { StarsCanvas } from "./canvas";
 function About() {
 
   return (
-   <section id="about" className="w-full h-fit mx-auto lg:h-screen">
+   <section id="about" className="w-full h-fit mx-auto bg-slate-950 backdrop-blur-3xl lg:h-screen">
     <div className={`${styles.paddingX}`}>
       <motion.h1 initial="hidden" whileInView="show" viewport={{once:true}} variants={textVariant()} className={`${styles.heroHeadText} flex justify-center mb-20`}>About Us</motion.h1>
       <div className="flex w-full flex-col gap-10  lg:flex-row ">
