@@ -81,6 +81,7 @@ export default function Home() {
               src={logo}
               width="120"
               height="120"
+              alt="E-Cell Logo"
             />
             <p className="text-sm text-gray-300">
               presents
@@ -147,7 +148,7 @@ export default function Home() {
           FEBRUARY 12 @ E-LEARNING CENTRE
         </p>
 
-        <div className="social-iicons mt-4 gap-3 flex justify-center items-center text-white">
+        <div className="social-iicons m-4 gap-3 flex justify-center items-center text-white">
           <motion.a
                 whileHover={{ y: -5 }}
                 href="https://twitter.com/ecellvssut?lang=en"
@@ -217,7 +218,7 @@ export default function Home() {
       </div>
 
       <div className="relative" onWheel={handleScroll}>
-        <div className="absolute bg-primary w-[200vw] h-[100vh] z-[-1] top-[10px] left-[-30px] rotate-[-5deg] md:rotate-[-3deg]"></div>
+        <div className="absolute  w-[200vw] h-[100vh] z-[-1] top-[10px] left-[-30px] rotate-[-5deg] md:rotate-[-3deg]"></div>
         <div className="flex flex-nowrap overflow-x-scroll md:items-center md:justify-center pt-28 pb-5 md:pt-44 gap-4 mx-2">
           <div className="w-[100vw] md:w-full flex justify-center">
             <InstagramEmbed url="https://www.instagram.com/p/DFfx-Fay7vT/" width={360} />
