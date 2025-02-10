@@ -144,7 +144,7 @@ export default function Home() {
           </AnimatePresence>
         </div>
         <p className="text-gray-300 text-sm md:text-base mt-2">
-          FEBRUARY 12 @ E-LEARNING CENTER
+          FEBRUARY 12 @ E-LEARNING CENTRE
         </p>
 
         <div className="social-iicons mt-4 gap-3 flex justify-center items-center text-white">
@@ -299,7 +299,7 @@ const startupList = {
   "01bcbf37-67b3-4ada-9b74-409c86569651": "Dataiku",
   "cdb9df9e-283f-412c-8f15-7d00137d0949": "H2O.ai",
   "86514f0a-67a4-4494-903e-2ba5818eba31": "Snorkel AI",
-  "f3db04e0-47bd-40a1-bcd9-dcedab3f184a": "DataRobot",
+  "f3db04e0-47bd-40a1-bcd9-dcedab3f184a": "Postman",
   "5529e109-7aff-43c8-a81a-73b775f0005b": "MindsDB",
   "ead01d98-bcbb-4843-ac15-d9d78b79cac0": "Lightmatter",
   "aa263eef-4398-4a6b-a431-ccd6c79853c2": "Graphcore",
@@ -313,9 +313,9 @@ const startupList = {
   "fe149412-785f-46a1-ab81-c73a33ffeeff": "Glean",
   "79ab706b-287c-4cf5-92c4-4757725dc0ed": "Elicit",
   "e325e891-cace-47f4-bbca-ea5a7d1a499c": "Vectara",
-  "34d4e24a-a100-49c1-b8d9-57833e005db4": "Cohere",
+  "34d4e24a-a100-49c1-b8d9-57833e005db4": "GitHub",
   "10b376eb-9bb3-43fc-b0bb-a02292d7d357": "Pinecone",
-  "ea237a4a-3788-4041-adb2-b8f01e281b04": "Weaviate",
+  "ea237a4a-3788-4041-adb2-b8f01e281b04": "Lenskart",
   "d7d17d1d-9368-4be2-b4ef-db431b66ace5": "LanceDB",
   "6d53058c-9c55-4cf0-9db2-e3fee42ea92e": "Qdrant",
   "9c15ce8d-f145-4f97-8023-e8f65a74a8df": "Zilliz",
@@ -326,6 +326,8 @@ const startupList = {
   "37b9cd29-2481-43a4-9994-968acc025829": "WhyLabs",
   "2906e6a3-52cb-402a-bd51-121407d7e29b": "Truera",
   "10973343-1399-4cf8-ac4b-d7c5d7d3fc25": "Tonic.ai",
-  "087ae08c-6467-471f-9e92-aedf8039663d": "Gretel.ai",
+  "087ae08c-6467-471f-9e92-aedf8039663d": "Airbnb",
   "dbd9d3ac-6f64-46db-be61-dd89e70279fc": "Mostly AI",
+  "e73a05fe-06c7-44fd-b3a1-07cc00482632": "Boat",
+  "bf3862c2-10c2-42d0-8101-b2a10cde48a1": "BlinkIt",
 };

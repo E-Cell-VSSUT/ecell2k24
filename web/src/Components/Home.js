@@ -28,7 +28,7 @@ function Home() {
             ENTREPRENEURSHIP CELL | VSSUT
           </motion.h1>
           <h2 className={`${styles.heroSubText} mt-2  text-white-100`}>
-            <i>A Techno-Managment Club</i>
+            <i>A Techno-Management Club</i>
           </h2>
         </motion.div>
         <motion.div
