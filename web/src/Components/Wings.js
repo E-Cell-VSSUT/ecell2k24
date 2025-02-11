@@ -9,11 +9,11 @@ import { wings } from "../Constants"
 
 const Wings = () => {
   return (
-    <div id="wings" className={`${styles.paddingX} tiltComponent`}>
+    <div id="wings" className={`${styles.paddingX} tiltComponent flex flex-col items-center`}>
       <motion.div initial="hidden" whileInView="show" viewport={{once:true}} variants={textVariant()}>
-     <h2 className="font-black text-white lg:text-[50px] sm:text-[40px] xs:text-[30px] text-[20px] lg:leading-[98px] mt-2 flex justify-center" >Wings</h2>
+     <h2 className="font-black text-white lg:text-[50px] sm:text-[40px] xs:text-[30px] text-[20px] lg:leading-[98px] mt-2" >Wings</h2>
      </motion.div>
-      <div className="container">
+      <div className="container m-auto">
         
         { wings.map((wing,index)=>(
 
