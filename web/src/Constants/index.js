@@ -83,12 +83,11 @@ const events = [
     site: "",
   },
   {
-    title: "Chai pe Charcha ",
+    title: "Chai pe Charcha Ep. 02",
     icon: Chai,
     iconBg: "#E6DEDD",
     date: "September 2024",
     points: [
-      "Episode 2",
       "E-Cell VSSUT welcomed back Chai Pe Charcha Episode 2, themed 'Paving the Bridge Between Incubators and Students'.",
       "This panel discussion fostered connections, inspired learning, and built a community of entrepreneurs."
     ],
@@ -147,7 +146,7 @@ const events = [
     site: "",
   },
   {
-    title: "Ipl Auction",
+    title: "IPL Auction",
     icon: ipl,
     iconBg: "#E6DEDD",
     date: "Jan 2023 - Present",
