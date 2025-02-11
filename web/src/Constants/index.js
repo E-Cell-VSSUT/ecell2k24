@@ -30,7 +30,7 @@ import {
   Iit,Kiit,Lnm,Mayanj,Aman,Orissa,Harekrushna,pratyush,sudipta,snehanjali,dinesh,swapnita,pratyasha,ashish,ume,swapna,abhinab,shahzada,pragya,
   shwetanjali,rakesh,om,satyashree,yashika,hitesh,shanti,simon,ashirbad,sai,nishant,arindam,Isita,Debi,Baishakhi,Angela,Aneek,Nikunj,
   payoshni,prateek,Shailesh,rahul,shaswata,Sidrah,shradha,sonali,subham,raj,Anshu,payal,debraj, anannya, adishree, dibya, harish, sutej, satyam,
-  sadashiv,lipika,
+  sadashiv,lipika,soham,
 } from "../assets";
 
 export const navLinks = [
@@ -405,6 +405,15 @@ const teams = {
       llink: "https://www.linkedin.com/in/pratyushpanda91/",
       tlink: "https://x.com/pandapratyush91",
     },
+    { 
+      name: "Swapna Sarthak Mohapatra",
+      designation: "Social Media Lead",
+      url: swapna,
+      ilink: "https://www.instagram.com/swaaappss?igsh=MWo0aXJvdjgyMzliNQ%3D%3D&utm_source=qr",
+      flink: "#",
+      llink: "https://www.linkedin.com/in/swapna-sarthak-mohapatra-a03251229?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+      tlink: "#",
+    },
     
     // MNS
     { 
@@ -716,7 +725,15 @@ const teams = {
       llink: "#",
       tlink: "#",
     },
-
+    {
+      name: "Soham Dhal",
+      designation: "Graphic Designing Core Member",
+      url: soham,
+      ilink: "https://www.instagram.com/soham.dhal?igsh=MWpnOGM2ZG51MGQwbQ==",
+      flink: "#",
+      llink: "https://www.linkedin.com/in/soham-dhal?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      tlink: "https://x.com/SohamDhal?t=CGsHl-7gBnziM8dcR9aHlw&s=09",
+    },
 
     {
       name: "Ume Habibba",
@@ -738,12 +755,12 @@ const teams = {
     },
     {
       name: "Ashirbad Tripathy",
-      designation: "Public Relations",
+      designation: "PR Core Member",
       url: ashirbad,
-      ilink: "#",
+      ilink: "https://www.instagram.com/that._.electrician/",
       flink: "#",
-      llink: "#",
-      tlink: "#",
+      llink: "https://www.linkedin.com/in/ashirbad-tripathy-244ab225a/",
+      tlink: "https://x.com/AshirbadTripa10?t=JmQ4e95PoMzl23xjqJd-TA&s=08",
     },
     { 
       name: "Simon Kenny Panigrahi",
@@ -759,15 +776,6 @@ const teams = {
       name: "Debaraj Beura ",
       designation: "Event Management",
       url: debraj,
-      ilink: "#",
-      flink: "#",
-      llink: "#",
-      tlink: "#",
-    },
-    { 
-      name: "SWAPNA Sarthak Mohapatra ",
-      designation: "Social Media ",
-      url: swapna,
       ilink: "#",
       flink: "#",
       llink: "#",
