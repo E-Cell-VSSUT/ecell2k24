@@ -8,9 +8,9 @@ import {faFacebook, faInstagram, faLinkedinIn, faXTwitter} from  '@fortawesome/f
 function Team() {
   return (
     <section className="w-full h-auto mx-auto py-20 bg-primary flex items-center flex-col">
-      <div className=" mt-[-36px] lg:mt-[-46px] relative h-96 w-screen flex  justify-center  ">
+      <div className="mt-8 relative md:h-96 w-screen flex justify-center  ">
         <img
-          className="object-cover"
+          className="object-contain"
           src="http://localhost:3000/static/media/c1.a34717e35ffbd1013562.webp"
           alt=""
         />
@@ -18,7 +18,7 @@ function Team() {
       <div className="m-2 z-10 mt-16">
          <span class=" bg-gradient-to-r from-slate-800 to-slate-600  text-blue-800 text-3xl  font-semibold me-2 px-2.5 py-0.5 rounded dark:bg-transperent dark:text-blue-100 ">Faculty Advisors</span>
       </div>
-      <div className="flex flex-wrap mt-[-14px] justify-center items-center mb-14 gap-7 p-10 glass ">
+      <div className="flex  mt-[-14px] flex-wrap justify-center items-center gap-7 mx-7 py-10 glass">
         {teams.FactAdv.map((team, index) => (
           <div class="wrapper m-4 mt-24 mb-28">
             <div class="img-area">
@@ -50,7 +50,7 @@ function Team() {
 
       {/* Leads */}
 
-      <div className="m-2 z-10">
+      <div className="m-2 z-10 mt-16">
          <span class=" bg-gradient-to-r  from-slate-800 to-slate-600  text-blue-800 text-3xl font-semibold me-2 px-2.5 py-0.5 rounded dark:bg-transperent dark:text-blue-100 ">Leads</span>
       </div>
       <div className="flex  mt-[-14px] flex-wrap justify-center items-center gap-7 mx-7 py-10 glass">

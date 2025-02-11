@@ -67,7 +67,7 @@ function Terstimonials() {
                           <div className="imgBox">
                             <img src={testimonial.url} alt="IIT-KGP" />
                           </div>
-                          <h3 className="flex flex-col items-center justify-center gap-2">
+                          <h3 className="flex flex-col items-center mt-4 justify-center gap-2">
                             {testimonial.name}
                             <br />
                             <span>{testimonial.caption}</span>
