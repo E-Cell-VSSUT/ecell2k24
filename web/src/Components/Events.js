@@ -62,7 +62,7 @@ const EventCard = ({ event }) => {
            class="relative inline-flex items-center justify-center px-10 py-4 overflow-hidden font-mono font-medium tracking-tighter text-white bg-[#007AFF] rounded-lg group"
          >
            <span class="absolute inset-0 w-full h-full -mt-1 rounded-lg opacity-30 bg-gradient-to-b from-transparent via-transparent to-black"></span>
-           <span class="relative  text-white">Contact Us to learn more..</span>
+           <span class="relative  text-white">Contact Us</span>
          </a>
        </div> 
       )}

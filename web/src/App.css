@@ -90,7 +90,7 @@
     position: relative;
     /* width: 50%; */
     /* left: 20%; */
-    padding: 20px 20px 20px 40px;
+    padding: 20px;
     transition: 0.5s;
     opacity: 0;
     visibility: hidden;
@@ -1037,7 +1037,6 @@ hr{
     background-image: none;
 }
 .content {
-  margin-left: 30px;
 }
 @media screen and(max-width:990px) {
   .content{
@@ -1340,6 +1339,7 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
   margin: 10px 0 5px 0;
   transform: translateY(-80px);
   transition: all 0.5s;
+  text-align: center;
   z-index: -1;
   visibility: hidden;
   opacity: 0;
@@ -1357,6 +1357,7 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
   font-size: 16px;
   transform: translateY(-120px);
   transition: 0.35s;
+  text-align: center;
   z-index: -1;
   visibility: hidden;
   opacity: 0;

@@ -74,10 +74,11 @@ import snehanjali from './Team/team23/SNEHANJALI GAGARIA.jpg'
 import astha from './Team/team23/Astha Prava Sahu.jpg'
 import dinesh from './Team/team23/Dinesh Pinninti.jpg'
 import swapnita from './Team/team23/Swapnita Singh.jpg'
+import soham from './Team/team23/Soham Dhal.jpg'
 import pratyasha from './Team/team23/Pratyasha Panda.jpg'
 import ashish from './Team/team23/Ashish Pradhan.jpg'
 import ume from './Team/team23/Ume Habibba.jpg'
-import swapna from './Team/team23/Swapna Sarthak MOHAPATRA.jpg'
+import swapna from './Team/team23/Swapna Sarthak MOHAPATRA.jpeg'
 import anannya from './Team/team23/Anannya Ipsita.jpg'
 import abhinab from './Team/team23/Abhinab banka.jpg'
 import shahzada from './Team/team23/Shahzada musharraf.jpg'
@@ -91,7 +92,7 @@ import yashika from './Team/team23/Yashika Sharma.jpg'
 import hitesh from './Team/team23/Hitesh Kumar Palo.jpg'
 import shanti from './Team/team23/Shanti sworup Biswal.jpg'
 import simon from './Team/team23/Simon KP.png'
-import ashirbad from './Team/team23/ASHIRBAD TRIPATHY.jpg'
+import ashirbad from './Team/team23/Ashirbad Tripathy.JPG'
 import sai from './Team/team23/Sai sidharth Dash.webp'
 import nishant from './Team/team23/Nishant Kumar Singh.jpg'
 import debraj from './Team/team23/Debraj Beura.jpg'
@@ -122,5 +123,5 @@ export {
     arindam,pratyush,sudipta,snehanjali,astha,dinesh,swapnita,pratyasha,ashish,ume,swapna,anannya,abhinab,shahzada,devraj,pragya,
     shwetanjali,rakesh,om,satyashree,yashika,hitesh,shanti,simon,ashirbad,sai,nishant,anil,auro,Isita,Debi,Baishakhi,Angela,Aneek,Nikunj,
     payoshni,prateek,Shailesh,rahul,payal,shaswata,Sidrah,shradha,sonali,subham,raj,Anshu,harish,sutej,satyam,sadashiv,
-    dibya, lipika,
+    dibya, lipika, soham
 };

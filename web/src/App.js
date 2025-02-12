@@ -18,31 +18,37 @@ import {
  import { useState, useEffect } from "react";
  import ClimbingBoxLoader from "react-spinners/ClimbingBoxLoader";
 
-function App() {
+function Loader({visible}) {
+  return (
+    <div 
+      className={`fixed top-0 z-[1000] bg-primary w-screen h-screen flex flex-col items-center justify-center ${visible ? '': 'hidden'}`}
+    >
+      <ClimbingBoxLoader 
+       color="#ffffff"
+       size={20}
+       aria-label="Loading Spinner"
+       data-testid="loader"
+       /> 
+    </div>
+  );
+}
 
-  const [loading,setLoading]=useState(false);
+function App() {
+  const [loading, setLoading]=useState(true);
 
   useEffect(()=>{
     setLoading(true);
     setTimeout(()=>{
       setLoading(false);
+      window.scrollTo(0, 0);
     },2000)
   },[])
 
 
   return (
     <div className="App bg-primary overflow-x-clip">
-    {loading ? 
-    <div className="flex justify-center items-center text-center bg-primary w-full h-screen">
-         <ClimbingBoxLoader 
-         color="#ffffff"
-         size={20}
-         aria-label="Loading Spinner"
-         data-testid="loader"
-         /> 
-         </div>
-         : 
-       <BrowserRouter>
+    <Loader visible={loading} />
+    <BrowserRouter>
       <Routes>
         <Route
           path="/"
