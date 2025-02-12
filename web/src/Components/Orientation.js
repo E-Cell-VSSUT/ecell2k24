@@ -23,10 +23,13 @@ export default function Home() {
 
   const ref = useRef();
 
-  const eventDate = new Date("2025-02-12T17:00:00");
+  const eventDate = new Date("2025-02-12T17:30:00");
 
   function getTimeRemaining(endTime) {
     const total = Date.parse(endTime) - Date.parse(new Date());
+    if (total <= 0)
+      setShowCountdown(false);
+
     return {
       total,
       days: Math.floor(total / (1000 * 60 * 60 * 24)),
@@ -91,6 +94,18 @@ export default function Home() {
             <h1 className="text-7xl sm:text-6xl md:text-8xl font-bold font-bg bg-gradient-to-r from-slate-50 to-purple-400 bg-clip-text text-transparent">
               E-NSPIRE
             </h1>
+            {!showCountdown &&
+              <div className="flex flex-col items-center">
+                <h1 className="text-white text-3xl">We are live!</h1>
+                {/* Register Button */}
+                <Link
+                  to={'https://induction-form-2k25.vercel.app/'}
+                  className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-semibold py-2 sm:py-3 rounded-xl transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl text-sm sm:text-base p-8 my-2 mt-4"
+                >
+                  Register Now
+                </Link>                 
+              </div>
+            }
           </div>
           {/* Countdown Timer Card */}
           <AnimatePresence>
@@ -132,14 +147,6 @@ export default function Home() {
                         </motion.div>
                       ))}
                     </div>
-                    {/* Register Button */}
-                    {/* <Button
-                      onClick={() => {}}
-                      className="w-full max-w-xs bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-semibold py-2 sm:py-3 rounded-xl transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl text-sm sm:text-base"
-                    >
-                      Register Now
-                    </Button>
-                    */}
               </motion.div>
             )}
           </AnimatePresence>
